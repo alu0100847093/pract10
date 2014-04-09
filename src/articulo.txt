@@ -1,0 +1,72 @@
+\documentclass[spanish,a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{epsfig}
+\usepackage{doc}
+\usepackage{graphicx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%123456789012345678901234567890123456789012345678901234567890123456789
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\textheight 29cm
+%\textwidth 15cm
+%\topmargin -4cm
+%\oddsidemargin 5mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{ El número $\pi$ }
+\author{Manuel Alejandro Cruz L \\ Práctica de Laboratorio \#10}
+\date{9 de Abril de 2014}
+
+\maketitle
+
+\begin{abstract}
+El objetivo es hacer una pequeña explicación del número $\pi$ en formato \LaTeX{}.
+\end{abstract}
+
+%\thispagestyle{empty}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{sección}
+
+Aqui podemos explicar de una manera mas detallada lo que haremos.
+\subsection{subsectión}
+Esto es una subsección.
+\subsection{subsección}
+Esto es otra\footnote{nota} subsección\footnote{otra nota}.
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{tabla}
+\begin{tabla}
+\begin{tabular}{lrc}
+primera columna & segunda & tercera \\
+\hline
+primera linea & datos & datos \\
+segunda linea & datos & datos \\
+tercera linea & datos & datos
+\end{tabular}
+\label{tabla}
+\end{table}
+Esto es una referencia de la tabla \ref{tabla}.
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{grafica}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.075]{imagen1.eps} \end{center}
+\caption{Ull}
+\label{foto}
+\end{figure}
+Esto es una referencia \ref{foto}.
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\begin{thebibliography}{1}
+\bibitem{python} Tutorial de Python. http://docs.python.org/2/tutorial/
+\end{thebibliography}
+
+\end{document}
